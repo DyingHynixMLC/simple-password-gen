@@ -14,9 +14,13 @@ class Program
     {
         Console.WriteLine("the grand passwordinator");
         Console.WriteLine("pick your poiso- i mean select password strength");
-        Console.WriteLine("0 = abysmal dogshit | 1 = ehhh | 2 = somewhat strong | 3 = sir how long until we bruteforce this password");
+        Console.WriteLine("0 = abysmal dogshit | 1 = ehhh | 2 = somewhat strong | 3 = sir how long until we bruteforce this password | v = enter password vault");
         string choice = Console.ReadLine();
         Enumer(choice);
+    }
+    static void passVault()
+    {
+        
     }
 
     static void Enumer(string choice)
@@ -29,6 +33,7 @@ class Program
                 case "1": len = 16; break;
                 case "2": len = 32; break;
                 case "3": len = 128; break;
+                case "v":
                 default:
                     Console.WriteLine("invalid choice");
                     Main();
